@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashujaa: Legends of Freedom</title>
+    <style>
+        /* Dark Theme Styling */
+        body { 
+            font-family: 'Georgia', serif; 
+            line-height: 1.8; 
+            color: #e0e0e0; 
+            background-color: #0a0a0a; /* Deep Black */
+            margin: 0; 
+            padding: 40px 20px; 
+        }
+        .container { 
+            max-width: 1000px; 
+            margin: auto; 
+        }
+        h1 { 
+            text-align: center; 
+            color: #d4af37; /* Metallic Gold */
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #8b0000; /* Kenyan Red */
+            padding-bottom: 20px;
+            margin-bottom: 60px;
+        }
+        .shujaa-card { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 80px; 
+            gap: 40px;
+        }
+        .shujaa-card:nth-child(even) { flex-direction: row-reverse; }
+
+        .image-box { 
+            flex: 1; 
+            position: relative;
+        }
+        .image-box img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 4px; 
+            filter: grayscale(40%);
+            transition: 0.5s;
+            border: 1px solid #333;
+        }
+        .image-box img:hover { 
+            filter: grayscale(0%);
+            border-color: #d4af37;
+        }
+
+        .text-box { flex: 1.5; }
+        h2 { 
+            color: #d4af37; 
+            font-size: 2em; 
+            margin-top: 0;
+            border-left: 4px solid #006400; /* Kenyan Green */
+            padding-left: 15px;
+        }
+        p { font-size: 1.1em; color: #cccccc; }
+        .emphasis { color: #ffffff; font-weight: bold; font-style: italic; }
+
+        .video-section {
+            margin-top: 100px;
+            padding: 40px;
+            background: #111;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #222;
+        }
+        .video-section h3 { color: #d4af37; margin-bottom: 20px; }
+
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+        nav ul li a.active { color: var(--kenya-red); border-bottom: 2px solid var(--kenya)}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fighters.html">Freedom Fighters</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+        </ul>
+    </nav>
+<audio id="bgMusic" src="anthem.mp3" autoplay loop></audio>
+    <p style="text-align: center; font-size: 0.8em; color: #555;">(Music starts automatically; click anywhere if silent)</p>
+
+<div class="container">
+    <h1>Legends of Liberty</h1>
+
+    <div class="shujaa-card">
+        <div class="image-box">
+            <img src="Jomo-Kenyatta.jpg" alt="Jomo Kenyatta">
+        </div>
+        <div class="text-box">
+            <h2>Mzee Jomo Kenyatta</h2>
+            <p>He was the <span class="emphasis">Burning Spear</span> that pierced through the darkness of colonial rule. For years, he carried the hopes of a nation in his heart, even while behind the cold bars of Kapenguria and the desert heat of Lodwar.</p>
+            <p>Kenyatta did not just seek a country; he sought dignity. He stood before the world and demanded that his people be seen as equals, eventually rising from a prisoner to the architect of a sovereign Republic.</p>
+        </div>
+    </div>
+
+    <div class="shujaa-card">
+        <div class="image-box">
+            <img src="Dedan kimathi.jpg" alt="Dedan Kimathi">
+        </div>
+        <div class="text-box">
+            <h2>Field Marshal Dedan Kimathi</h2>
+            <p>The spirit of the Aberdare forests. Kimathi was the shadow in the trees that the empire could not catch. To him, freedom was not a request—it was a birthright worth the ultimate price.</p>
+            <p>He led his warriors with a simple, haunting philosophy: <span class="emphasis">"It is better to die on our feet than to live on our knees."</span> Though he fell in the struggle, his name became the wind that kept the fire of independence burning until the flag finally rose.</p>
+        </div>
+    </div>
+
+    <div class="shujaa-card">
+        <div class="image-box">
+            <img src="Mekatilili.jpg" alt="Mekatilili wa Menza">
+        </div>
+        <div class="text-box">
+            <h2>Mekatilili wa Menza</h2>
+            <p>A prophetess of fire and a mother of the revolution. When the British came to steal the souls of the Giriama through forced labor, Mekatilili danced the <span class="emphasis">Kifudu</span>—a dance of defiance that shook the colonial administration to its core.</p>
+            <p>She was captured and sent far from her home, yet she walked through the wilderness for over a thousand kilometers to return to her people. She proved that the spirit of a Kenyan woman could never be caged or exiled.</p>
+        </div>
+    </div>
+
+    <script>
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('bgMusic');
+            if (audio.paused) {
+                audio.play();
+            }
+        }, { once: true });
+    </script>
+
+<div class="flag-section" style="margin-top: 80px; padding: 40px; background: #111; border-radius: 15px; border: 1px solid #333;">
+    <h3 style="text-align: center; color: #d4af37; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 30px;">The Banner of Our Sovereignty</h3>
+
+    <div class="kenyan-flag" style="width: 100%; max-width: 600px; height: 300px; margin: 0 auto 40px auto; position: relative; border: 1px solid #333; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <div style="height: 30%; background: #000;"></div> <div style="height: 5%; background: #fff;"></div>  <div style="height: 30%; background: #8b0000;"></div> <div style="height: 5%; background: #fff;"></div>  <div style="height: 30%; background: #006400;"></div> <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 80px;">🛡️</div>
+    </div>
+
+    <table style="width: 100%; border-collapse: collapse; color: #ccc; font-family: 'Segoe UI', sans-serif;">
+        <tr style="border-bottom: 1px solid #222;">
+            <th style="padding: 15px; text-align: left; color: #d4af37;">Color/Symbol</th>
+            <th style="padding: 15px; text-align: left; color: #d4af37;">Significance</th>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><span style="color: #000; background: #fff; padding: 2px 8px; border-radius: 4px; font-weight: bold;">BLACK</span></td>
+            <td style="padding: 15px;">Represents the <strong>People of the Republic of Kenya</strong>.</td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><span style="color: #8b0000; font-weight: bold;">RED</span></td>
+            <td style="padding: 15px;">Symbolizes the <strong>Blood shed</strong> during the fight for independence.</td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><span style="color: #006400; font-weight: bold;">GREEN</span></td>
+            <td style="padding: 15px;">Represents the <strong>Natural wealth</strong> and fertile land of our nation.</td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><span style="color: #fff; font-weight: bold;">WHITE</span></td>
+            <td style="padding: 15px;">Symbolizes <strong>Peace and Unity</strong>.</td>
+        </tr>
+        <tr>
+            <td style="padding: 15px;"><span style="color: #d4af37; font-weight: bold;">SHIELD & SPEARS</span></td>
+            <td style="padding: 15px;">Represents the <strong>Defense of Freedom</strong> and our readiness to protect our sovereignty.</td>
+        </tr>
+    </table>
+</div>
+</body>
+<footer>
+    <p>&copy; 2026|Kenya independence project</p>
+</footer>
+</html>

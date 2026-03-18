@@ -1,0 +1,117 @@
+:root {
+    --kenya-green: #006400;
+    --kenya-red: #bb0000;
+    --kenya-black: #000000;
+    --light-gray: #f4f4f4;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(24, 24, 24)
+}
+
+nav {
+    background: var(--kenya-black);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    align-items: center;
+}
+
+nav ul { list-style: none; display: flex; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+nav ul li a.active { color: var(--kenya-red); border-bottom: 2px solid var(--kenya-red); }
+
+@keyframes changeBackground {
+    0% { background-image: url('Banner1.jpg'); }
+    33% { background-image: url('Banner\ 2.jpg'); }
+    66% { background-image: url('Banner\ 3.png'); }
+    100% { background-image: url('Banner\ 4.jpg'); }
+}
+   .hero {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 15s infinite; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: background-image 1s ease-in-out;
+}
+ .her {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('Kenyan\ flag.jpg') no-repeat center center;
+    background-size: cover;
+    
+    background-size: contain;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 1000px;
+    
+
+    width: 100%;
+    height: 60vh;                
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+
+.her h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.her p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.fighter-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.fighter-table th, .fighter-table td {
+    border: 1px solid #060606;
+    padding: 15px;
+    text-align: left;
+}
+
+.fighter-table th {
+    background-color: var(--kenya-green);
+    color: white;
+}
+
+.table-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--kenya-red);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--kenya-black);
+    color: white;
+    margin-top: 40px;
+}
